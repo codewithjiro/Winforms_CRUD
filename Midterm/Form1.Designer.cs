@@ -47,9 +47,9 @@
             this.txtPassword = new MaterialSkin.Controls.MaterialTextBox();
             this.cbPosition = new MaterialSkin.Controls.MaterialComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.txtSearch = new MaterialSkin.Controls.MaterialMaskedTextBox();
             this.cbSearchBy = new MaterialSkin.Controls.MaterialComboBox();
             this.btnDelete = new MaterialSkin.Controls.MaterialButton();
+            this.txtSearch = new MaterialSkin.Controls.MaterialMaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -97,7 +97,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(49, 253);
+            this.label5.Location = new System.Drawing.Point(51, 267);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(96, 28);
             this.label5.TabIndex = 4;
@@ -107,7 +107,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(70, 331);
+            this.label6.Location = new System.Drawing.Point(72, 342);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(56, 28);
             this.label6.TabIndex = 5;
@@ -172,7 +172,7 @@
             this.txtFirstName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.txtFirstName.Hint = "Enter your firstname";
             this.txtFirstName.LeadingIcon = null;
-            this.txtFirstName.Location = new System.Drawing.Point(220, 91);
+            this.txtFirstName.Location = new System.Drawing.Point(220, 102);
             this.txtFirstName.MaxLength = 50;
             this.txtFirstName.MouseState = MaterialSkin.MouseState.OUT;
             this.txtFirstName.Multiline = false;
@@ -192,7 +192,7 @@
             this.txtMiddleName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.txtMiddleName.Hint = "Enter your middlename";
             this.txtMiddleName.LeadingIcon = null;
-            this.txtMiddleName.Location = new System.Drawing.Point(220, 162);
+            this.txtMiddleName.Location = new System.Drawing.Point(220, 173);
             this.txtMiddleName.MaxLength = 50;
             this.txtMiddleName.MouseState = MaterialSkin.MouseState.OUT;
             this.txtMiddleName.Multiline = false;
@@ -255,7 +255,7 @@
             "Male",
             "Female",
             "Other"});
-            this.cbGender.Location = new System.Drawing.Point(220, 244);
+            this.cbGender.Location = new System.Drawing.Point(220, 255);
             this.cbGender.MaxDropDownItems = 4;
             this.cbGender.MouseState = MaterialSkin.MouseState.OUT;
             this.cbGender.Name = "cbGender";
@@ -273,7 +273,7 @@
             this.txtAge.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.txtAge.Hint = "Enter your age";
             this.txtAge.LeadingIcon = null;
-            this.txtAge.Location = new System.Drawing.Point(220, 318);
+            this.txtAge.Location = new System.Drawing.Point(220, 329);
             this.txtAge.MaxLength = 50;
             this.txtAge.MouseState = MaterialSkin.MouseState.OUT;
             this.txtAge.Multiline = false;
@@ -364,7 +364,7 @@
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ControlText;
-            this.dataGridView1.Location = new System.Drawing.Point(37, 398);
+            this.dataGridView1.Location = new System.Drawing.Point(37, 413);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
@@ -374,6 +374,50 @@
             this.dataGridView1.Size = new System.Drawing.Size(1008, 222);
             this.dataGridView1.TabIndex = 20;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            // 
+            // cbSearchBy
+            // 
+            this.cbSearchBy.AutoResize = false;
+            this.cbSearchBy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cbSearchBy.Depth = 0;
+            this.cbSearchBy.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cbSearchBy.DropDownHeight = 174;
+            this.cbSearchBy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbSearchBy.DropDownWidth = 121;
+            this.cbSearchBy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbSearchBy.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbSearchBy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cbSearchBy.FormattingEnabled = true;
+            this.cbSearchBy.Hint = "Filter";
+            this.cbSearchBy.IntegralHeight = false;
+            this.cbSearchBy.ItemHeight = 43;
+            this.cbSearchBy.Location = new System.Drawing.Point(856, 655);
+            this.cbSearchBy.MaxDropDownItems = 4;
+            this.cbSearchBy.MouseState = MaterialSkin.MouseState.OUT;
+            this.cbSearchBy.Name = "cbSearchBy";
+            this.cbSearchBy.Size = new System.Drawing.Size(187, 49);
+            this.cbSearchBy.StartIndex = 0;
+            this.cbSearchBy.TabIndex = 25;
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnDelete.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnDelete.Depth = 0;
+            this.btnDelete.HighEmphasis = true;
+            this.btnDelete.Icon = null;
+            this.btnDelete.Location = new System.Drawing.Point(35, 742);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnDelete.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnDelete.Size = new System.Drawing.Size(133, 36);
+            this.btnDelete.TabIndex = 26;
+            this.btnDelete.Text = "DELETE RECORD";
+            this.btnDelete.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnDelete.UseAccentColor = false;
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // txtSearch
             // 
@@ -390,7 +434,7 @@
             this.txtSearch.Hint = "Search...";
             this.txtSearch.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
             this.txtSearch.LeadingIcon = null;
-            this.txtSearch.Location = new System.Drawing.Point(37, 642);
+            this.txtSearch.Location = new System.Drawing.Point(35, 656);
             this.txtSearch.Mask = "";
             this.txtSearch.MaxLength = 32767;
             this.txtSearch.MouseState = MaterialSkin.MouseState.OUT;
@@ -417,50 +461,6 @@
             this.txtSearch.UseSystemPasswordChar = false;
             this.txtSearch.ValidatingType = null;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
-            // 
-            // cbSearchBy
-            // 
-            this.cbSearchBy.AutoResize = false;
-            this.cbSearchBy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cbSearchBy.Depth = 0;
-            this.cbSearchBy.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cbSearchBy.DropDownHeight = 174;
-            this.cbSearchBy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbSearchBy.DropDownWidth = 121;
-            this.cbSearchBy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbSearchBy.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbSearchBy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.cbSearchBy.FormattingEnabled = true;
-            this.cbSearchBy.Hint = "Filter";
-            this.cbSearchBy.IntegralHeight = false;
-            this.cbSearchBy.ItemHeight = 43;
-            this.cbSearchBy.Location = new System.Drawing.Point(858, 641);
-            this.cbSearchBy.MaxDropDownItems = 4;
-            this.cbSearchBy.MouseState = MaterialSkin.MouseState.OUT;
-            this.cbSearchBy.Name = "cbSearchBy";
-            this.cbSearchBy.Size = new System.Drawing.Size(187, 49);
-            this.cbSearchBy.StartIndex = 0;
-            this.cbSearchBy.TabIndex = 25;
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnDelete.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btnDelete.Depth = 0;
-            this.btnDelete.HighEmphasis = true;
-            this.btnDelete.Icon = null;
-            this.btnDelete.Location = new System.Drawing.Point(37, 718);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnDelete.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnDelete.Size = new System.Drawing.Size(133, 36);
-            this.btnDelete.TabIndex = 26;
-            this.btnDelete.Text = "DELETE RECORD";
-            this.btnDelete.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btnDelete.UseAccentColor = false;
-            this.btnDelete.UseVisualStyleBackColor = true;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // Form1
             // 
@@ -492,6 +492,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "My Tasks";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
@@ -522,9 +523,9 @@
         private MaterialSkin.Controls.MaterialTextBox txtPassword;
         private MaterialSkin.Controls.MaterialComboBox cbPosition;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private MaterialSkin.Controls.MaterialMaskedTextBox txtSearch;
         private MaterialSkin.Controls.MaterialComboBox cbSearchBy;
         private MaterialSkin.Controls.MaterialButton btnDelete;
+        private MaterialSkin.Controls.MaterialMaskedTextBox txtSearch;
     }
 }
 
