@@ -217,6 +217,7 @@ namespace Midterm
             this.KeyPreview = true;
 
             LoadData();
+            LoadComboBoxData(); // Load dropdown values from DB
 
             cbGender.DropDownStyle = ComboBoxStyle.DropDownList;
             cbDept.DropDownStyle = ComboBoxStyle.DropDownList;
@@ -312,6 +313,7 @@ namespace Midterm
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
+            // Cancel Edit with Backspace
             if (e.KeyCode == Keys.Back)
             {
                 if (selectedId != -1)
@@ -319,7 +321,22 @@ namespace Midterm
                     CancelEdit();
                 }
             }
+
+            // Delete Record with Ctrl + D
+            if (e.Control && e.KeyCode == Keys.D)
+            {
+                e.SuppressKeyPress = true;
+                DeleteRecord();
+            }
+
+            // Clear Inputs with Ctrl + C
+            if (e.Control && e.KeyCode == Keys.C)
+            {
+                e.SuppressKeyPress = true;
+                ClearInputs();
+            }
         }
+
 
         private void DeleteRecord()
         {
@@ -366,5 +383,35 @@ namespace Midterm
         {
             DeleteRecord();
         }
+
+        private void LoadComboBoxData()
+        {
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+
+                LoadComboBox(cbGender, "SELECT name FROM genders", conn);
+                LoadComboBox(cbDept, "SELECT name FROM departments", conn);
+                LoadComboBox(cbPosition, "SELECT name FROM positions", conn);
+            }
+        }
+
+        private void LoadComboBox(ComboBox comboBox, string query, MySqlConnection conn)
+        {
+            comboBox.Items.Clear();
+
+            using (MySqlCommand cmd = new MySqlCommand(query, conn))
+            using (MySqlDataReader reader = cmd.ExecuteReader())
+            {
+                while (reader.Read())
+                {
+                    comboBox.Items.Add(reader.GetString("name"));
+                }
+            }
+
+            if (comboBox.Items.Count > 0)
+                comboBox.SelectedIndex = 0;
+        }
+
     }
 }

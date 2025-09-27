@@ -48,7 +48,6 @@
             this.cbPosition = new MaterialSkin.Controls.MaterialComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.cbSearchBy = new MaterialSkin.Controls.MaterialComboBox();
-            this.btnDelete = new MaterialSkin.Controls.MaterialButton();
             this.txtSearch = new MaterialSkin.Controls.MaterialMaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -219,13 +218,7 @@
             this.cbDept.IntegralHeight = false;
             this.cbDept.ItemHeight = 43;
             this.cbDept.Items.AddRange(new object[] {
-            "Computer Libraries",
-            "SASED",
-            "Hospitality Management",
-            "Business Management",
-            "Education",
-            "Information Technology",
-            "Engineering"});
+            ""});
             this.cbDept.Location = new System.Drawing.Point(745, 42);
             this.cbDept.MaxDropDownItems = 4;
             this.cbDept.MouseState = MaterialSkin.MouseState.OUT;
@@ -252,9 +245,7 @@
             this.cbGender.IntegralHeight = false;
             this.cbGender.ItemHeight = 43;
             this.cbGender.Items.AddRange(new object[] {
-            "Male",
-            "Female",
-            "Other"});
+            ""});
             this.cbGender.Location = new System.Drawing.Point(220, 255);
             this.cbGender.MaxDropDownItems = 4;
             this.cbGender.MouseState = MaterialSkin.MouseState.OUT;
@@ -340,12 +331,6 @@
             this.cbPosition.Hint = "Choose your role";
             this.cbPosition.IntegralHeight = false;
             this.cbPosition.ItemHeight = 43;
-            this.cbPosition.Items.AddRange(new object[] {
-            "Manager",
-            "Teacher",
-            "Student",
-            "Staff",
-            "Principal"});
             this.cbPosition.Location = new System.Drawing.Point(745, 298);
             this.cbPosition.MaxDropDownItems = 4;
             this.cbPosition.MouseState = MaterialSkin.MouseState.OUT;
@@ -399,26 +384,6 @@
             this.cbSearchBy.StartIndex = 0;
             this.cbSearchBy.TabIndex = 25;
             // 
-            // btnDelete
-            // 
-            this.btnDelete.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnDelete.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btnDelete.Depth = 0;
-            this.btnDelete.HighEmphasis = true;
-            this.btnDelete.Icon = null;
-            this.btnDelete.Location = new System.Drawing.Point(35, 742);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnDelete.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnDelete.Size = new System.Drawing.Size(133, 36);
-            this.btnDelete.TabIndex = 26;
-            this.btnDelete.Text = "DELETE RECORD";
-            this.btnDelete.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btnDelete.UseAccentColor = false;
-            this.btnDelete.UseVisualStyleBackColor = true;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
-            // 
             // txtSearch
             // 
             this.txtSearch.AllowPromptAsInput = true;
@@ -468,7 +433,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Menu;
             this.ClientSize = new System.Drawing.Size(1093, 825);
-            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.cbSearchBy);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.dataGridView1);
@@ -524,7 +488,6 @@
         private MaterialSkin.Controls.MaterialComboBox cbPosition;
         private System.Windows.Forms.DataGridView dataGridView1;
         private MaterialSkin.Controls.MaterialComboBox cbSearchBy;
-        private MaterialSkin.Controls.MaterialButton btnDelete;
         private MaterialSkin.Controls.MaterialMaskedTextBox txtSearch;
     }
 }
