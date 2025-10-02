@@ -13,7 +13,7 @@ namespace Midterm
 {
     public partial class Form1 : Form
     {
-        private string connectionString = "server=localhost;database=jiro;uid=root;pwd=;";
+        private string connectionString = "server=localhost;database=midterm_exam;uid=root;pwd=;";
         private int selectedId = -1;
 
         public Form1()
